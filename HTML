@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">  
+<head>
+    <!--Larissa Fernanda-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do tempo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h3> Confira o clima de uma cidade</h3> 
+            <div class="form-input-container">
+                <input type="text" placeholder="digite o nome da cidade" id="city-input">
+                <button id="search">
+                    <i class="fa-solid fa-magnifying-glass"> </i> <!-- o "i" significa ícone-->
+                </button>
+
+            </div>
+        </div>
+        <div id="weather-data" class="hide">
+            <h2>
+                <i class="fa-solid fa-location-dot"></i>
+                <span id="city">Paulista</span> <!--Span= conter texto, conteúdo que vai ser "modificado" depois-->
+            </h2>
+            <p id="temperature"><span>31</span>&deg;C</p>
+            <div id="description-container">
+                <p id="description">Nublado</p>
+                <img
+                 src="https://openweathermap.org/img/wn/10d@2x.png" 
+                 alt="Condições do tempo"
+                 id="weather-icon">
+
+            </div>
+            <div id="details-container">
+                <p id="umidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span>79%</span>
+                </p>
+                <p id="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <span>4 km/h</span>
+                </p>
+            </div>
+        </div>
+        <div id="erro-message" class="hide">
+            <p>A cidade <span>nome</span> que você digitou não existe.</p>
+        </div>
+    </div>
+</body>
+</html>
