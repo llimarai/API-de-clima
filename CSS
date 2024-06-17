@@ -1,0 +1,89 @@
+/* "ctrl ;": atalho para fazer comentário */
+/* BODY E MARGENS */
+*{
+    /* Setor para zero espaço na margem e usar fonte importada */
+    padding: 0;
+    margin: 0;
+    font-family: "Merriweather";
+}
+
+body{
+    background: linear-gradient(180deg,#8dd0f5 0%, #594cee 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* VH= altura do dispositivo*/
+}
+
+/*Esconder algumas áreas quando necessário*/
+.hide{
+    display: none;
+}
+
+.container{
+    background-color: #5c54ed;
+    box-shadow: rgba(0,0,0,0.24) 0px 3px 8px; /* box-shadow= ;sombra*/
+    padding: 2rem; /* padding= espaçamento*/
+    color: #fdfdfd;
+    border-radius: 1rem; /*unidade de proporção, mais flexível.*/
+}
+
+.form h3{
+    margin-bottom: 1rem;
+}
+
+.form-input-container{
+    display:flex;
+}
+
+.form input{
+    padding: .8rem;
+    border: none;
+    flex: 1;
+    border-radius: 4px;
+}
+
+.form button{
+    padding: .8rem;
+    min-width: 50px; /*minimo que ficará, não fica menor que isso*/
+    margin-left: 8px;
+    background-color: #bbccd4;;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+/*INFORMAÇÕES DA CIDADE*/
+#weather-data{
+    border-top: 1px solid #fff;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+#weather-data h2 i{
+    font-size: 1rem;
+}
+
+#weather-data span{
+    margin: 0.6rem;
+}
+
+#description-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.6rem 0;
+}
+
+#details-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#details-container #umidity{
+    border-right: 1px solid #fff;
+    margin: 0.6rem;
+    padding: 0.6rem;
+}
